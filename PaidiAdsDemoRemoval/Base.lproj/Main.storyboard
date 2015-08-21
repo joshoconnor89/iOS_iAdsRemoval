@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XG9-4J-S6p">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="y0k-fs-Qq7">
+            <objects>
+                <viewController id="XG9-4J-S6p" customClass="ViewController" customModule="InAppDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IsD-TB-CvP"/>
+                        <viewControllerLayoutGuide type="bottom" id="85M-rC-4ep"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rqv-a6-MaO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2K-Q5-QxC">
+                                <rect key="frame" x="93" y="378" width="134" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Remove Ads">
+                                    <color key="titleColor" red="0.99607849120000003" green="0.98431378599999997" blue="0.98039221759999995" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyProduct:" destination="XG9-4J-S6p" eventType="touchUpInside" id="0zQ-X3-hQV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="201" translatesAutoresizingMaskIntoConstraints="NO" id="nSz-8H-rA1">
+                                <rect key="frame" x="56" y="114" width="201" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5B-v0-ehX">
+                                <rect key="frame" x="0.0" y="438" width="320" height="50"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078437569999997" green="0.95686280729999995" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomAdBanner" destination="m5B-v0-ehX" id="7MZ-Gi-jLh"/>
+                        <outlet property="buyButton" destination="Q2K-Q5-QxC" id="wob-mK-sXy"/>
+                        <outlet property="removeMsg" destination="nSz-8H-rA1" id="BHD-lt-mYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3p6-XU-38r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.40000000000001" y="370.14666666666665"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
